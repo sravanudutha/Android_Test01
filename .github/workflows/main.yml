@@ -17,7 +17,8 @@ jobs:
         
        #  Build Windows and OSX
         - name: Build Android Player
-          run: /opt/Unity/Editor/Unity -quit -batchmode -nographics -silent-crashes -noUpm -logFile -projectPath . BuildTarget.Android ./Assets/CISample.apk
+          run: /opt/Unity/Editor/Unity -quit -batchmode -nographics -silent-crashes -noUpm -logFile -projectPath . -executeMethod ./Assets/Editor/AndroidBuilder.build 
+                                       
        # - name: Build OSX Player
        #   run: /opt/Unity/Editor/Unity -quit -batchmode -nographics -silent-crashes -noUpm -logFile -projectPath . -buildOSXUniversalPlayer ./bin-osx/CISample.app      
         
