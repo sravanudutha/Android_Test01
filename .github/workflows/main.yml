@@ -25,7 +25,7 @@ jobs:
           uses: actions/upload-artifact@v1
           with:
             name: CISampleWin64Binary
-            path: ./bin-win64
+            path: ./Assets
 
       #  - name: Archive Mac Build
       #    uses: actions/upload-artifact@v1
